@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/topnav.css">
+    <script src="js/script.js"></script>
+    <script src="js/topnav.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            background-image: url("img/itália.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
+    <div class="containerfluid topnav" id="topnav" style="z-index: 2;"> <!--navbar e header-->
+        <div class="row" style="display: flex;margin: 0;--bs-gutter-y:none !important;">
+            <div class="col-sm-2" >
+                <img src="img/Gemelli.png" class="imgnavbar" style="width: 150px;height: 150px;margin-left: 15px;padding: 0;">
+            </div>
+            <div class="col-sm-10 text-white topnav">
+                <span class="align-middle">
+                    <div class="topnav2" id="myTopnav">
+                        <a  href="#home">Home</a>
+                        <a  href="#sobremim">Sobre mim</a>
+                        <a  href="#blog">Blog</a>
+                        <a href="#destinos">Destinos</a>
+                        <a href="#dicas">Dicas</a>
+                        <a class="dropdown"  style="display: none;">
+                        <a id="dropbtn" onclick="toggleDropdown()">Mais Opções</a>
+                            <div class="dropdown-content" id="dropdownContent">
+                                <a href="#galeriadefotos">Galeria de Fotos</a>
+                                <a href="#contato">Contato</a>
+                                <a href="#assinatura Newsletter">Assinatura de Newsletter</a>
+                                <a href="#video">Vídeo</a>
+                                <a >Guias</a>
+                                <a >Parcerias e Colaborações</a>
+                                <a >FAQ</a>
+                            </div>
+                        </a>
+                  </div>
+                </span>
+            </div>
+        </div>
+    </div>
+    <section id="home"><!--Home-->
+        <div class="container home" style="margin-top: 120px;padding: 0;margin-bottom: 600px;">
+            <div class="row justify-content-sm-center" style="margin: 0;">
+                <div class="bloco">
+                    <h1 class="home" style="font-size: 25px;margin: 20px;text-align: justify;">&nbsp;Bem-vindo ao seu guia de viagem<br>Explore o mundo conosco!</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sobremim"><!--Sobre Mim-->
+        <div class="containerfluid sobremim" style="position: relative;height: auto;">
+            <div class="row1" style="margin: 0;padding: 0;">
+                <div class="col-sm-12" style="background-color: #fc7019;">
+                    <h3 style="padding-left: 50px;padding-top: 50px;margin: 0;padding-bottom: 25px;">Sobre mim</h3>
+                </div>
+            </div>
+            <div class="row" style="width: 100%;--bs-gutter-x:none !important;padding-top: 15px;">
+                <div class="col-6" style="background-color: #fc7019;">
+                    <p style="padding-left: 50px;text-align: justify;">
+                        Maria, uma apaixonada por aventuras desde jovem, decidiu transformar sua paixão por viagens em sua profissão. Com um espírito explorador inato, ela percorreu destinos exóticos, absorvendo culturas diversas e acumulando experiências únicas. Movida pelo desejo de compartilhar suas descobertas, Maria encontrou no trabalho como guia de viagens online a plataforma ideal para inspirar outros a explorarem o mundo, oferecendo insights valiosos e roteiros personalizados que transformam simples viagens em jornadas memoráveis.
+                    </p>
+                    <p style="padding-left: 50px;text-align: justify;">
+                        Seu percurso não apenas a levou a lugares distantes, mas também a uma jornada de autodescoberta. Com conhecimento aprofundado e entusiasmo contagioso, Maria guia virtualmente os viajantes, transmitindo não apenas informações práticas, mas também o amor pelas descobertas e o respeito pelas diversas culturas que enriquecem nosso planeta. Maria é mais do que uma guia de viagem; ela é uma contadora de histórias que conecta pessoas através da magia de explorar o desconhecido.
+                    </p>
+                </div>
+                <div class="col-6" style="background-color: #fc7019;">
+                    <img src="img/igm2.jpeg" class="imgsobremim" style="width: 90%;height: 75%;margin-left: 15px;">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="blog"><!--Blog-->
+        <div class="containerfluid text-white blog" style="backdrop-filter: blur(10px);position: relative;background-color: rgba(0, 0, 0, 0.2);height: 550px;">
+            <div class="row" style="width: 100%;padding: 0;">
+                <div class="col-sm-12">
+                    <h3 style="padding-left: 50px;padding-top: 50px;margin: 0;padding-bottom: 25px;">Blog</h3>
+                </div>
+            <div class="row" style="width: 100%;padding: 0;padding-top: 15px;">
+                <div class="col-6">
+                    <img src="img/blog.jpg" class="imgblog" style="width: 100%;height: 100%;padding-left: 50px;">
+                </div>
+                <div class="col-6">
+                    <p style="padding-left: 50px;text-align: justify;">
+                        Seja bem-vindo ao meu universo pessoal, um espaço onde as palavras ganham vida e as experiências se transformam em narrativas cativantes. No meu blog pessoal, compartilho reflexões, conquistas, desafios e descobertas, criando um diário virtual que vai além das fronteiras físicas.
+                    </p>
+                    <p style="padding-left: 50px;text-align: justify;">
+                        Embarque comigo nesta jornada íntima, onde cada post revela um pedaço do meu mundo. Desde as viagens que moldaram meu olhar até os momentos simples que enriquecem a jornada da vida, este blog é um convite para explorar a autenticidade, celebrar as conexões e inspirar-se na beleza dos detalhes.
+                    </p>
+                    <p style="padding-left: 50px;text-align: justify;">
+                        "A vida é curta demais para não saborear cada momento. Então, respire, sorria e aproveite. Encontre alegria nas pequenas coisas, abrace o agora e viva com intensidade. Em última análise, a verdadeira riqueza está na arte de curtir a vida."
+                    </p>
+                    <center><p>Visite nosso blog ainda hoje!</p></center>
+                    <br>
+                    <center><button style="background-color: #fc7019;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);width: 20%;height: 15%;"><a href="https://www.essemundoenosso.com.br" style="text-decoration: none;color: black;">Blog</a></button></center>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="destinos"><!--Destinos-->
+        <div class="containerfluid destinos" style="background-color: #fc7019;height: auto;">
+            <div class="row" style="margin: 0;">
+                <div class="col-sm-12">
+                    <h3 style="padding-left: 50px;padding-top: 50px;margin: 0;padding-bottom: 25px;">Destinos</h3>
+                </div>
+            <div class="row" style="padding-top: 15px;">
+                <div class="col-6">
+                    <p style="padding-left: 50px;text-align: justify;">
+                        Numa jornada pelos recantos do globo, minha alma inquieta guiou-me através de destinos encantadores, cada um com sua própria essência e história a contar. Primeiro, mergulhei nas ruelas históricas de Roma, onde a arquitetura milenar sussurra segredos do passado. Entre o Coliseu imponente e a atmosfera vibrante da Fontana di Trevi, fui envolvido pela aura eterna da Cidade Eterna.
+                    </p>
+                    <p style="padding-left: 50px;text-align: justify;">
+                        De lá, voei para as paisagens deslumbrantes de Santorini, um paraíso insular que pinta os céus com pôr do sol de tirar o fôlego. As casas caiadas de branco, contrastando com os tons azuis do Mar Egeu, criaram uma sinfonia de cores que perdurará na minha memória.
+                    </p>
+                    <p style="padding-left: 50px;text-align: justify;">
+                        Rumo ao Oriente, a mágica de Kyoto me acolheu. Caminhar pelos jardins zen e explorar templos majestosos foi uma imersão na serenidade japonesa. A modernidade pulsante de Tóquio, por sua vez, trouxe-me para o futuro, onde tradição e inovação dançam em harmonia.
+                    </p>
+                    <p style="padding-left: 50px;text-align: justify;">
+                        Na América do Sul, descobri a beleza selvagem de Machu Picchu, uma cidade perdida nos picos andinos. A grandiosidade das ruínas incas, aninhada nas montanhas, provocou uma reflexão sobre o poder e a transitoriedade do tempo.
+                    </p>
+                    <p style="padding-left: 50px;text-align: justify;">
+                        Cada destino, uma história. Cada experiência, uma página escrita no livro das minhas jornadas. Assim como cada lugar possui sua própria melodia, é impossível comparar a arte única que cada um pintou na tela da minha vida. A verdadeira riqueza das viagens reside na diversidade, nas nuances que cada destino oferece, e na forma como essas experiências se entrelaçam, tecendo a tapeçaria das minhas memórias inesquecíveis.
+                    </p>
+                </div>
+                <div class="col-6">
+                    <img src="img/machu-picchu.jpg" class="img-fluid mb-3 imgdestinos" style="height: 40%;width: 85%;">
+                    <img src="img/kyoto.jpg" class="img-fluid imgdestinos" style="height: 40%;">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="dicas"><!--Dicas-->
+        <div class="containerfluid text-white dicas" style="backdrop-filter: blur(10px);position: relative;background-color: rgba(0, 0, 0, 0.2);height: 550px;">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3 style="padding-left: 50px;padding-top: 50px;margin: 0;padding-bottom: 25px;">Dicas</h3>
+                </div>
+            <div class="row" style="padding-top: 15px;">
+                <div class="col-6">
+                    <img class="imgdicas" src="img/viagem.avif" style="margin-left: 50px;">
+                </div>
+                <div class="col-6">
+                    <p style="padding-left: 50px;text-align: justify;">
+                        Embarcar em uma jornada pode ser uma experiência incrivelmente enriquecedora, e algumas dicas simples podem tornar sua viagem ainda mais memorável. Primeiramente, ao arrumar suas malas, opte pela praticidade, escolhendo peças versáteis e fundamentais para o clima do destino. Digitalize cópias dos seus documentos importantes, como passaporte e reservas, para facilitar qualquer eventualidade.
+                    </p>
+                    <p style="padding-left: 50px;text-align: justify;">
+                        Durante a viagem, explore além dos pontos turísticos populares. Mergulhe na cultura local, experimentando a culinária autêntica e interagindo com os habitantes locais. Esteja aberto a imprevistos, pois muitas vezes são nesses momentos que surgem as experiências mais autênticas e inesquecíveis. Ao seguir essas dicas simples, você estará mais preparado para aproveitar cada momento da sua jornada, transformando sua viagem em uma aventura verdadeiramente especial. Viaje com curiosidade, flexibilidade e alegria!
+                    </p>
+                    <center><p style="text-align: justify;padding-left: 50px;">Quer saber mais? Clique aqui para descobrir mais dicas de como aproveitar ao máximo suas viagens</p></center>
+                    <center><button style="background-color: #fc7019;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);width: 20%;height: 15%;"><a href="https://www.assistcard.com/br/dicas-para-planejar-sua-viagem-com-seguranca?gad_source=1&gclid=Cj0KCQiA67CrBhC1ARIsACKAa8SKJgsMqDQgsamch4PW6f6CYWTTljqsFRkj4enXEgloQELMrFsGkz8aAsAqEALw_wcB" style="text-decoration: none;color: black;">Dicas</a></button></center>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="galeriadefotos"><!--galeria de fotos-->
+        <div class="containerfluid galeriadefotos" style="overflow: hidden;background-color: #fc7019;height: auto;">
+            <div class="row" style="margin-bottom: 15px;">
+                <div class="col-sm-12">
+                  <h3 style="padding-left: 50px;padding-top: 50px;margin: 0;padding-bottom: 25px;">Galeria de fotos</h3>  
+            </div>
+            <div class="row" style="padding-top: 15px;">
+                <div class="col-sm-12">
+                    <center><p class="subtexto" style="font-size: 20px;">Aqui estão algumas fotos para alguns lugares que eu viajei!</p></center>
+                </div>
+            </div>
+            <div class="row" style="display: flex;margin-bottom: 40px;margin-left: 25px;">
+                <div class="col-sm-3" style="width: 25%;padding: 0;">
+                    <p style="text-align: justify; font-size: 18px; text-decoration: underline;">Portugal</p>
+                    <img src="img/portugal.jpg" style="width: 90%; height: auto;">
+                </div>
+                <div class="col-sm-3" style="width: 25%;padding: 0;">
+                    <p style="text-align: justify; font-size: 18px; text-decoration: underline;">Suécia</p>
+                    <img src="img/suecia.jpg" style="width: 90%; height: auto;">
+                </div>
+                <div class="col-sm-3" style="width: 25%;padding: 0;">
+                    <p style="text-align: justify; font-size: 18px; text-decoration: underline;">Londres</p>
+                    <img src="img/londres.webp" style="width: 90%; height: auto;">
+                </div>
+                <div class="col-sm-3" style="width: 25%;padding: 0;">
+                    <p style="text-align: justify; font-size: 18px; text-decoration: underline;">Miami</p>
+                    <img src="img/miami.jfif" style="width: 90%; height: auto;">
+                </div>
+            </div>
+            <div class="row" style="display: flex;margin-left: 25px;margin-bottom: 15px;">
+                <div class="col-sm-3" style="width: 25%;padding: 0;">
+                    <p style="text-align: justify; font-size: 18px; text-decoration: underline;">Alemanha</p>
+                    <img src="img/alemanha.webp" style="width: 90%; height: auto;">
+                </div>
+                <div class="col-sm-3" style="width: 25%;padding: 0;">
+                    <p style="text-align: justify; font-size: 18px; text-decoration: underline;">Egito</p>
+                    <img src="img/egito.jpg" style="width: 90%; height: auto;">
+                </div>
+                <div class="col-sm-3" style="width: 25%;padding: 0;">
+                    <p style="text-align: justify; font-size: 18px; text-decoration: underline;">Cuba</p>
+                    <img src="img/cuba.jpg" style="width: 90%; height: auto;">
+                </div>
+                <div class="col-sm-3" style="width: 25%;padding: 0;">
+                    <p style="text-align: justify; font-size: 18px; text-decoration: underline;">Noruega</p>
+                    <img src="img/noruega.jpg" style="width: 90%; height: auto;">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contato"><!--Contato-->
+        <div class="containerfluid text-white contato" style="backdrop-filter: blur(10px);position: relative;background-color: rgba(0, 0, 0, 0.2);height: 535px;">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3 style="padding-left: 50px;padding-top: 50px;margin: 0;padding-bottom: 25px;">Contato</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <p style="padding-left: 50px;text-align: justify;">
+                        Bem-vindo à nossa página de contato, onde a aventura começa com uma simples mensagem. Estamos aqui para ouvir suas perguntas, compartilhar dicas valiosas ou ajudar a planejar sua próxima jornada extraordinária. Sinta-se à vontade para nos enviar suas histórias de viagem, sugestões de destinos ou apenas um "olá" amigável. 
+                    </p>
+                    <p style="padding-left: 50px;text-align: justify;"> 
+                        Nossa equipe está ansiosa para criar uma conexão direta com você, transformando seus sonhos de viagem em realidade. Utilize o formulário abaixo para nos contar como podemos tornar sua experiência conosco ainda mais incrível. Agradecemos por fazer parte da nossa comunidade de exploradores. Viaje conosco e deixe-nos ser seu guia nas próximas aventuras!
+                    </p>
+                </div>
+                <div class="col-6" style="align-items: center; padding-left: 75px; text-align: center;">
+                    <div class="bloco2">
+                        <form action="/seu-script-de-processamento" method="post" style="display: grid;">
+                            <label for="nome" style="margin: 10px;">Nome:</label>
+                            <input type="text" id="nome" name="nome" required style="margin: 10px;">
+                    
+                            <label for="email" style="margin: 10px;">E-mail:</label>
+                            <input type="email" id="email" name="email" required style="margin: 10px;">
+                    
+                            <label for="mensagem" style="margin: 10px;">Mensagem:</label>
+                            <textarea id="mensagem" name="mensagem" rows="4" required style="margin: 10px;"></textarea>
+                    
+                            <button type="submit" style="margin: 10px;">Enviar Mensagem</button>
+                        </form>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </section>
+    <section id="assinatura Newsletter"><!--Assinatura Newsletter-->
+        <div class="containerfluid assinatura" style="background-color: #fc7019;height: auto;">
+            <div class="row" style="margin: 0;">
+                <div class="col-sm-12">
+                    <h3 style="padding-left: 50px;padding-top: 50px;margin: 0;padding-bottom: 25px;">Assinatura Newsletter</h3>
+                </div>
+            <div class="row" style="padding-top: 15px !important;padding-bottom: 15px !important;">
+                <div class="col-6">
+                    <div class="bloco2">
+                        <form action="/seu-script-de-processamento" method="post" style="display: grid;padding-left: 50px;">
+                            <label for="nome" style="margin: 10px;">Nome:</label>
+                            <input type="text" id="nome" name="nome" required style="margin: 10px;">
+                    
+                            <label for="email" style="margin: 10px;">E-mail:</label>
+                            <input type="email" id="email" name="email" required style="margin: 10px;">
+
+                            <label for="meses" style="margin: 10px;">Meses:</label>
+                            <select id="meses" name="meses" required style="margin: 10px;">
+                                <option value="3 meses">3 meses</option>
+                                <option value="6 meses">6 meses - (2 dias grátis)</option>
+                                <option value="1 ano">1 ano - (7 dias grátis)</option>
+                            </select>
+                    
+                            <label for="mensagem" style="margin: 10px;">Mensagem:</label>
+                            <textarea id="mensagem" name="mensagem" rows="4" required style="margin: 10px;"></textarea>
+                    
+                            <button type="submit" style="margin: 10px;">Enviar Mensagem</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <p style="padding-left: 50px;text-align: justify;">
+                        Descubra um universo de possibilidades e transforme suas viagens em experiências inesquecíveis! Ao assinar nossa newsletter, você abrirá as portas para um mundo de inspiração, ofertas exclusivas e dicas de viagem especializadas. Seja o primeiro a explorar destinos fascinantes, receber insights de especialistas e ter acesso a promoções irresistíveis.
+                    </p>
+                    <p style="padding-left: 50px;text-align: justify;">
+                        Nossa newsletter é o seu passaporte para uma comunidade apaixonada por descobertas e aventuras. Junte-se a nós e faça parte dessa jornada emocionante, onde cada e-mail é uma porta aberta para novas horizontes. Não perca a chance de tornar suas viagens ainda mais extraordinárias – assine agora e embarque nessa experiência única conosco!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <seciton id="video">
+        <div class="containerfluid text-white video" style="backdrop-filter: blur(10px);position: relative;background-color: rgba(0, 0, 0, 0.2);">
+            <div class="row" style="margin-bottom: 15px;">
+                <div class="col-sm-12">
+                  <h3 style="padding-left: 50px;padding-top: 50px;margin: 0;padding-bottom: 25px;">Vídeo</h3>  
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <center><p class="subtexto" style="font-size: 20px;">Aqui está um vídeo de uma viagem minha que eu fiz!</p></center>
+                </div>
+                <div class="col-sm-12">
+                <center>
+                    <video width="640" height="360" class="videoplayer" controls>
+                        <source src="img/Uma Viagem pela Toscana _ Guia da Itália - Paisagens Italianas.mp4" type="video/mp4">
+                    </video>
+                </center>
+                </div>
+            </div>
+        </div>
+    </seciton>
+    <section id="guias"><!--Guias-->
+        <div class="containerfluid text-black guias" style="background-color: #fc7019;height: auto;">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3 style="padding-left: 50px;padding-top: 50px;padding-bottom: 25px;">Guias</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <p style="padding-left: 50px;text-align: justify;">
+                        Este guia é o seu companheiro confiável, oferecendo insights locais autênticos, recomendações gastronômicas irresistíveis, sugestões de atividades emocionantes e, é claro, orientações práticas para otimizar cada aspecto da sua jornada. Além de apresentar destinos inspiradores, nosso guia visa conectar você com a essência cultural de cada lugar, proporcionando uma imersão genuína. Navegue pelas páginas para descobrir segredos de viagem, itinerários personalizados e as últimas novidades em tendências turísticas. Abrace a aventura com nosso guia de viagem, onde a descoberta é mais do que uma jornada - é um estilo de vida.
+                    </p>
+                    <p style="padding-left: 50px;text-align: justify;">
+                        Dicas Locais: Explore recomendações autênticas, desde os melhores lugares para saborear a culinária local até segredos escondidos que só os residentes conhecem.
+
+                        <br><br>Itinerários Personalizados: Descubra itinerários cuidadosamente elaborados para otimizar seu tempo, destacando pontos turísticos imperdíveis e experiências únicas.
+
+                        <br><br>Informações Práticas: Encontre orientações práticas, desde opções de transporte até dicas sobre moeda local, garantindo uma viagem suave e sem complicações.
+
+                        <br><br>Eventos e Atividades: Mantenha-se atualizado sobre eventos locais, festivais e atividades culturais, proporcionando uma imersão completa na vida cotidiana do destino.
+
+                        <br><br>Atrações Emergentes: Descubra lugares menos conhecidos, mas igualmente encantadores, que escapam dos roteiros tradicionais, permitindo uma verdadeira exploração fora do comum.
+                    </p>
+                </div>
+                <div class="col-6">
+                    <img src="img/guia.jpg" class="guiaimg" style="width: 100%;height: 90%;">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="parceriasecolab">
+        <div class="containerfluid text-white parceriasecolab" style="backdrop-filter: blur(10px);position: relative;background-color: rgba(0, 0, 0, 0.2);">
+            <div class="row">
+                <div class="col-sm-12">
+                  <h3 style="padding-left: 50px;padding-top: 50px;margin: 0;padding-bottom: 25px;">Parcerias e Colaborações</h3>  
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <center><p class="subtexto" style="font-size: 20px;">Essas são algumas colaborações que meu site tem!</p></center>
+                </div>
+            </div>
+            <div class="row">
+                </div>
+                <div class="col-sm-4" style="padding: 0;padding-left: 50px;">
+                    <img src="img/nike.png" style="width: 75%; height: 80%;">
+                </div>
+                <div class="col-sm-4" style="padding: 0;padding-left: 50px;">
+                    <img src="img/azul.png" style="width: 75%; height: auto;">
+                </div>
+                <div class="col-sm-4" style="padding: 0;padding-left: 50px;">
+                    <img src="img/cvc.jfif" style="width: 75%; height: 80%;">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="FAQ"><!--FAQ-->
+        <div class="containerfluid text-black FAQ" style="background-color: #fc7019;height: auto;">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3 style="padding-left: 50px;padding-top: 50px;padding-bottom: 25px;">FAQ</h3>
+                </div>
+            </div>
+            <div class="row" style="padding-bottom: 25px;">
+                <div class="col-6">
+                    <div class="bloco2">
+                        <form action="/seu-script-de-processamento" method="post" style="display: grid;padding-left: 50px;">
+                            <label for="nome" style="margin: 10px;">Nome:</label>
+                            <input type="text" id="nome" name="nome" required style="margin: 10px;">
+                    
+                            <label for="email" style="margin: 10px;">E-mail:</label>
+                            <input type="email" id="email" name="email" required style="margin: 10px;">
+                    
+                            <label for="mensagem" style="margin: 10px;">Sua Dúvida:</label>
+                            <textarea id="mensagem" name="mensagem" rows="4" required style="margin: 10px;"></textarea>
+                    
+                            <button type="submit" style="margin: 10px;">Enviar Mensagem</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <p style="padding-left: 50px;text-align: justify;">
+                        Estamos aqui para fornecer respostas claras e úteis para as questões mais comuns que nossos visitantes podem ter. Se você não encontrar o que procura, sinta-se à vontade para nos enviar suas perguntas diretamente através do formulário abaixo.
+                    </p>
+                    <p style="padding-left: 50px;text-align: justify;">
+                        Nossa equipe está empenhada em garantir que sua experiência conosco seja transparente, informativa e agradável. O FAQ é uma ferramenta valiosa para esclarecer dúvidas comuns, e seu feedback é essencial para aprimorarmos continuamente nossos serviços. Agradecemos por escolher explorar conosco e estamos ansiosos para atender suas perguntas!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="containerfluid footer" > <!--Footer-->
+        <div class="row" style="margin: 0;">
+            <div class="col-sm-12 text-white" style="background-color: #fc7019;padding: 0;">
+                <center><p>Todos os direitos reservados - 2023</p></center>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

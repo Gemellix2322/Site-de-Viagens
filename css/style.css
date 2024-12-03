@@ -1,0 +1,89 @@
+* {
+    box-sizing:border-box;
+    transition: 0.5s;
+}
+
+
+.row{
+    width: 100% !important;
+    padding: 0 !important;
+}
+
+.containerfluid.topnav{
+    position: fixed;top: 0;
+    transition: 0.5s;
+    height: 130px;
+    width: 100%;
+    background-color: #fc7019;
+}
+
+
+
+.col-sm-10.topnav{
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.topnav{
+    position: relative;
+}
+
+.bloco{
+  background-color: #fc7019;
+  position: absolute;
+  top: 300px;
+  width: auto;
+  height: auto;
+
+  overflow: hidden;
+  z-index: 1;
+}
+
+.bloco2{
+    background-color: #fc7019;
+    width: auto;
+    height: auto;
+
+}
+
+@media screen and (max-width: 605px){
+    .imgdicas{
+        width: 200px !important;
+        height: auto !important;
+    }
+    .imgnavbar{
+        width: 100px !important;
+        height: 120px !important;
+    }
+    .videoplayer{
+        width: 560px;
+        height: 260px;
+        padding-left: 50px;
+    }
+    
+    .home ,.sobremim ,.blog ,.destinos ,.assinatura ,.dicas ,.video ,.galeriadefotos ,.contato ,.guias ,.FAQ ,.parceriasecolab{
+        height: auto !important;
+    }
+
+    p{
+        font-size: small !important;
+    }
+
+    .guiaimg{
+        width: 90% !important;
+        height: auto !important;
+    }
+
+    .imgsobremim{
+        height: auto !important;
+    }
+
+    .imgblog{
+        height: auto !important;
+    }
+
+    .imgdestinos{
+        height: auto !important;
+    }
+}
